@@ -5,5 +5,5 @@
 Make sure you have Python3 install  
 Clone this repository  
 Run "pip install -r requirements.txt"  
-Then run the program using "uvicorn main:app --reload"  
+Then run the program using "python index.py"  
 You can test this using postman locally  
