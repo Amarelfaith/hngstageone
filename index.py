@@ -44,7 +44,8 @@ def classify_number():
     # Validate input
     if number is None:
         return jsonify({"error": "Number parameter is required"}), 400
-
+    if not number.isdigit():
+        return jsonify({"error": "Input must be a number"}), 400
     try:
         number = int(number)
     except ValueError:
